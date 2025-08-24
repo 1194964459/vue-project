@@ -5,6 +5,7 @@
     2. 组定义标题、内容、底部按钮（基于插槽 slot 完全自定义内容）
     3. 事件：关闭、取消、确认
     4. 点击遮罩层 关闭模态框
+    5. 遮罩层如何实现？
 
 
 增强用户体验的：
@@ -51,7 +52,6 @@
         <slot>默认模态框内容</slot>
       </div>
       
-      <!-- TODO:slot用法？ -->
       <!-- 底部区域 -->  
       <div class="modal-footer" v-if="showFooter || $slots.footer">
         <slot name="footer">
@@ -196,12 +196,13 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   bottom: 0;
+  /* 上述是创建一个全屏的position:fixed元素 */
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  opacity: 0;
+  opacity: 0;  /* 完全透明 */
   transition: opacity v-bind(animationDuration)ms ease;
 }
 
