@@ -2,10 +2,18 @@
 import useModal from './views/useModal.vue';
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import LifeCycle from './components/LifeCycle.vue'
+import RefTest from './components/响应式/ref解构.vue'
+import toRefs from './components/响应式/toRef.vue'
+import shallowRef from './components/响应式/shallowRef.vue';
+import OptionSetup from './components/组件写法/模版_选项式_setup.vue'
+import RuncCom from './components/组件写法/渲染函数_选项式_setup'
 </script>
 
 <template>
-  <useModal />
+  <!-- <LifeCycle gsg="gs" /> -->
+  
+  <!-- <useModal /> -->
   <!-- <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
@@ -20,6 +28,13 @@ import HelloWorld from './components/HelloWorld.vue'
   </header> -->
 
   <!-- <RouterView /> -->
+
+  <!-- <RefTest /> -->
+  <!-- <toRefs /> -->
+   <!-- <shallowRef /> -->
+
+    <!-- <OptionSetup /> -->
+     <RuncCom />
 </template>
 
 <style scoped>
