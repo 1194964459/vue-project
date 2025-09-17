@@ -6,8 +6,10 @@ import LifeCycle from './components/LifeCycle.vue'
 import RefTest from './components/响应式/ref解构.vue'
 import toRefs from './components/响应式/toRef.vue'
 import shallowRef from './components/响应式/shallowRef.vue';
-import OptionSetup from './components/组件写法/模版_选项式_setup.vue'
-import RuncCom from './components/组件写法/渲染函数_选项式_setup'
+import OptionSetup from './components/组件写法/选项式_模版_setup.vue'
+import RuncCom from './components/组件写法/选项式_渲染函数h_setup'
+// import Vmodel from './components/v-model/index.vue'
+import ComVmodel from './components/v-model/组件v-model/父.vue'
 </script>
 
 <template>
@@ -34,7 +36,10 @@ import RuncCom from './components/组件写法/渲染函数_选项式_setup'
    <!-- <shallowRef /> -->
 
     <!-- <OptionSetup /> -->
-     <RuncCom />
+     <!-- <RuncCom /> -->
+  <!-- <Vmodel /> -->
+
+   <ComVmodel />
 </template>
 
 <style scoped>
