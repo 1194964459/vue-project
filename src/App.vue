@@ -1,15 +1,19 @@
 <script setup lang="ts">
-import useModal from './views/useModal.vue';
+// import useModal from './views/UseModal.vue';
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import LifeCycle from './components/LifeCycle.vue'
-import RefTest from './components/响应式/ref解构.vue'
-import toRefs from './components/响应式/toRef.vue'
-import shallowRef from './components/响应式/shallowRef.vue';
-import OptionSetup from './components/组件写法/选项式_模版_setup.vue'
-import RuncCom from './components/组件写法/选项式_渲染函数h_setup'
+// import LifeCycle from './components/LifeCycle.vue'
+// import RefTest from './components/响应式/ref解构.vue'
+// import toRefs from './components/响应式/toRef.vue'
+// import shallowRef from './components/响应式/shallowRef.vue';
+// import OptionSetup from './components/组件写法/选项式_模版_setup.vue'
+// import RuncCom from './components/组件写法/选项式_渲染函数h_setup'
 // import Vmodel from './components/v-model/index.vue'
-import ComVmodel from './components/v-model/组件v-model/父.vue'
+// import ComVmodel from './components/v-model/组件v-model/父.vue'
+// import VirtualScroll from './components/虚拟滚动列表.vue'   // 林三心
+import VirtualScroll from './components/虚拟滚动/test.vue'
+
+
 </script>
 
 <template>
@@ -39,7 +43,10 @@ import ComVmodel from './components/v-model/组件v-model/父.vue'
      <!-- <RuncCom /> -->
   <!-- <Vmodel /> -->
 
-   <ComVmodel />
+   <!-- <ComVmodel /> -->
+    <!-- <VirtualScroll /> -->
+     <!-- <div>hahh</div> -->
+      <VirtualScroll />
 </template>
 
 <style scoped>
