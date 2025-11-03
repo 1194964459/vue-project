@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 地址列表展示 -->
+    <div class="list">
+        <!-- 地址展示中，非编辑态 -->
+        <div class="item" style="display: flex;">
+            <!-- 默认地址直接勾选，有checked属性 -->
+            <input type="radio" checked />  
+            <div>
+                <p>默认地址</p>
+                <p><strong>北京故宫</strong></p>
+                <p>122626</p>
+            </div>
+            <div onclick="handleClick(itemId)">
+                <img src="url" alt="编辑">
+            </div>
+        </div>
+      <div class="item" style="display: flex;">
+            <!-- 非默认地址，不会勾选 -->
+            <input type="radio"  />  
+            <div>
+                <p><strong>上海</strong></p>
+                <p>2773</p>
+            </div>
+            <div onclick="handleClick(itemId)">
+                <img src="url" alt="编辑">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+<script>
+    let mockList = [
+        {
+            id:1, name: 'a', iphone:122626, address:'北京故宫'
+        },
+        {
+            id:2, name: 'b', iphone:122626, address:'上海'
+        },
+        {
+            id:3, name: 'c', iphone:122626, address:'湖北'
+        }
+    ]
+
+</script>
+</html>
